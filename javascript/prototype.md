@@ -19,7 +19,7 @@ var originerd = new Person(28, "male", "Jitae Kim");
 `originerd`의 `constructor`는 `Person`을 가리킵니다.
 
 ```js
-console.log(originerd.constructor.name); // "Person"
+originerd.constructor.name; // "Person"
 ```
 
 ## prototype
@@ -49,5 +49,5 @@ Person.isValidAge = function(age) {
   return (age >= 0 && age < 150);
 }
 
-console.log(Person.isValid(28)); // true
+Person.isValid(28); // true
 ```
